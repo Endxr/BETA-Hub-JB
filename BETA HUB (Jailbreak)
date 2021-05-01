@@ -1,0 +1,202 @@
+local End = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local bar1 = Instance.new("Frame")
+local bar2 = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local userbox = Instance.new("TextBox")
+local passbox = Instance.new("TextBox")
+local submit = Instance.new("TextButton")
+local MainFrame = Instance.new("Frame")
+local mbar1 = Instance.new("Frame")
+local mbar2 = Instance.new("Frame")
+local mtitle = Instance.new("TextLabel")
+local exitbutton = Instance.new("TextButton")
+local Autoarrest = Instance.new("TextButton")
+local Autorob = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+
+-- Properties
+
+End.Name = "End"
+End.Parent = game.CoreGui
+End.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = End
+LoginFrame.Active = true
+LoginFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+LoginFrame.BorderSizePixel = 0
+LoginFrame.Position = UDim2.new(0.065705128, 0, 0.243980721, 0)
+LoginFrame.Selectable = true
+LoginFrame.Size = UDim2.new(0, 311, 0, 408)
+LoginFrame.Style = Enum.FrameStyle.RobloxRound
+
+bar1.Name = "bar1"
+bar1.Parent = LoginFrame
+bar1.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+bar1.BorderSizePixel = 0
+bar1.Position = UDim2.new(-0.027794743, 0, -0.021073211, 0)
+bar1.Size = UDim2.new(0, 311, 0, 33)
+
+bar2.Name = "bar2"
+bar2.Parent = LoginFrame
+bar2.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+bar2.BorderSizePixel = 0
+bar2.Position = UDim2.new(-0.0282238536, 0, 0.0621862262, 0)
+bar2.Size = UDim2.new(0, 311, 0, 13)
+
+title.Name = "title"
+title.Parent = LoginFrame
+title.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.28100419, 0, 0.153852284, 0)
+title.Size = UDim2.new(0, 129, 0, 45)
+title.Font = Enum.Font.SourceSans
+title.Text = "BETA Hub "
+title.TextColor3 = Color3.new(1, 1, 1)
+title.TextScaled = true
+title.TextSize = 14
+title.TextWrapped = true
+
+userbox.Name = "userbox"
+userbox.Parent = LoginFrame
+userbox.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+userbox.BorderColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+userbox.BorderSizePixel = 4
+userbox.Position = UDim2.new(0.158104226, 0, 0.409313738, 0)
+userbox.Size = UDim2.new(0, 200, 0, 26)
+userbox.Font = Enum.Font.SourceSansBold
+userbox.Text = "Usermane"
+userbox.TextColor3 = Color3.new(1, 1, 1)
+userbox.TextScaled = true
+userbox.TextSize = 14
+userbox.TextWrapped = true
+userbox.TextXAlignment = Enum.TextXAlignment.Left
+
+passbox.Name = "passbox"
+passbox.Parent = LoginFrame
+passbox.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+passbox.BorderColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+passbox.BorderSizePixel = 4
+passbox.Position = UDim2.new(0.158104226, 0, 0.549019635, 0)
+passbox.Size = UDim2.new(0, 200, 0, 26)
+passbox.Font = Enum.Font.SourceSansBold
+passbox.Text = "Password"
+passbox.TextColor3 = Color3.new(1, 1, 1)
+passbox.TextScaled = true
+passbox.TextSize = 14
+passbox.TextWrapped = true
+passbox.TextXAlignment = Enum.TextXAlignment.Left
+
+submit.Name = "submit"
+submit.Parent = LoginFrame
+submit.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+submit.BorderColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+submit.Position = UDim2.new(0.251040131, 0, 0.707023442, 0)
+submit.Size = UDim2.new(0, 146, 0, 50)
+submit.Font = Enum.Font.SourceSansBold
+submit.Text = "Login"
+submit.TextColor3 = Color3.new(1, 1, 1)
+submit.TextSize = 30
+submit.TextWrapped = true
+
+submit.MouseButton1Down:connect(function() 
+
+if userbox.Text == "Zen" and passbox.Text == "Endermaniscool" then
+MainFrame.Visible = true
+LoginFrame.Visible = false
+end
+
+end)
+
+
+
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = End
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MainFrame.Position = UDim2.new(0, 355, 0, 170)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 476, 0, 424)
+MainFrame.Visible = false
+
+mbar1.Name = "mbar1"
+mbar1.Parent = MainFrame
+mbar1.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+mbar1.BorderSizePixel = 0
+mbar1.Size = UDim2.new(0, 476, 0, 44)
+
+mbar2.Name = "mbar2"
+mbar2.Parent = MainFrame
+mbar2.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+mbar2.BorderSizePixel = 0
+mbar2.Position = UDim2.new(0, 0, 0, 44)
+mbar2.Size = UDim2.new(0, 476, 0, 15)
+
+mtitle.Name = "mtitle"
+mtitle.Parent = MainFrame
+mtitle.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+mtitle.BorderSizePixel = 0
+mtitle.Position = UDim2.new(0, 6, 0, 0)
+mtitle.Size = UDim2.new(0, 164, 0, 50)
+mtitle.Font = Enum.Font.SourceSansBold
+mtitle.Text = "BETA Hub"
+mtitle.TextColor3 = Color3.new(1, 1, 1)
+mtitle.TextSize = 30
+mtitle.TextXAlignment = Enum.TextXAlignment.Left
+
+exitbutton.Name = "exitbutton"
+exitbutton.Parent = MainFrame
+exitbutton.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+exitbutton.BorderSizePixel = 0
+exitbutton.Position = UDim2.new(0, 433, 0, 0)
+exitbutton.Size = UDim2.new(0, 43, 0, 59)
+exitbutton.Font = Enum.Font.SourceSansBold
+exitbutton.Text = "X"
+exitbutton.TextColor3 = Color3.new(1, 1, 1)
+exitbutton.TextSize = 30
+
+Autoarrest.Name = "Autoarrest"
+Autoarrest.Parent = MainFrame
+Autoarrest.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Autoarrest.BorderColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+Autoarrest.BorderSizePixel = 4
+Autoarrest.Position = UDim2.new(0, 6, 0, 157)
+Autoarrest.Size = UDim2.new(0, 200, 0, 50)
+Autoarrest.Font = Enum.Font.SourceSansBold
+Autoarrest.Text = "Autoarrest"
+Autoarrest.TextColor3 = Color3.new(1, 1, 1)
+Autoarrest.TextSize = 35
+Autoarrest.MouseButton1Down:connect(function() 
+MainFrame.Visible = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeWasTaken/Loaf-Group-Rise-Up/main/autoarrest.lua", true))() -- auto arrest
+end)
+
+Autorob.Name = "Autorob"
+Autorob.Parent = MainFrame
+Autorob.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Autorob.BorderColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+Autorob.BorderSizePixel = 4
+Autorob.Position = UDim2.new(0, 264, 0, 157)
+Autorob.Size = UDim2.new(0, 200, 0, 50)
+Autorob.Font = Enum.Font.SourceSansBold
+Autorob.Text = "Autorob"
+Autorob.TextColor3 = Color3.new(1, 1, 1)
+Autorob.TextSize = 35
+Autorob.MouseButton1Down:connect(function() 
+MainFrame.Visible = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeWasTaken/Loaf-Group-Rise-Up/main/autorob.lua", true))() -- autorob
+end)
+
+credits.Name = "credits"
+credits.Parent = MainFrame
+credits.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0, 89, 0, 400)
+credits.Size = UDim2.new(0, 275, 0, 24)
+credits.Font = Enum.Font.SourceSansBold
+credits.Text = "Made by End#7981 DM for comments"
+credits.TextColor3 = Color3.new(1, 1, 1)
+credits.TextSize = 20
+credits.TextXAlignment = Enum.TextXAlignment.Left
